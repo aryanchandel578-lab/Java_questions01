@@ -1,0 +1,21 @@
+// ROCK PAPER SCISSORS
+import java.util.*;
+public class rock {
+    public static void main(String args[]) {
+        Scanner sc= new Scanner(System.in);
+        String s= sc.next();
+        switch (s) {
+            case "Rock":
+                System.out.println("rock beats scissor");
+                break;
+            case "Paper":
+                System.out.println("paper beats stone");
+                break;
+            case "Scissor":
+                System.out.println("Scissor beats paper");
+            default:
+                System.out.println("not valid input");
+
+        }
+    }
+}
