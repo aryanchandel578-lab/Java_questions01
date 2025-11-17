@@ -1,0 +1,20 @@
+class Solution {
+    int seriesN(int a, int b, int c, int N) {
+        int d1 = b - a;
+        int d2 = c - b;
+
+        int value = 0;
+        int diff = 0;
+
+        for (int i = 1; i <= N; i++) {
+            if (i == 1) { value = a; diff = d1; }
+            else if (i == 2) { value = b; diff = d2; }
+            else if (i == 3) { value = c; diff = d1; }
+            else {
+                value += diff;
+                diff = (diff == d1 ? d2 : d1);
+            }
+        }
+        return value;
+    }
+}
