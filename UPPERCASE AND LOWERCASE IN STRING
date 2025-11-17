@@ -1,0 +1,14 @@
+import java.lang.String;
+import java.util.*;
+public class string {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String str1= sc.next();
+        String str2= sc.next();
+        int o= str1.length()+str2.length();
+
+        String a= str1.substring(0,1).toUpperCase() +str1.substring(1,str1.length());
+        String b= str2.substring(0,1).toUpperCase() +str2.substring(1,str2.length());
+        System.out.printf("%d %s %s",o,a,b);
+    }
+}
